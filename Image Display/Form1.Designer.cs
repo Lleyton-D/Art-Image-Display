@@ -1,4 +1,4 @@
-﻿namespace Image_Display
+namespace Image_Display
 {
     partial class Form1
     {
@@ -34,7 +34,10 @@
             this.selectButton = new System.Windows.Forms.Button();
             this.timerLabel = new System.Windows.Forms.Label();
             this.pictureBox = new System.Windows.Forms.PictureBox();
+            this.timerNumeric = new System.Windows.Forms.NumericUpDown();
+            this.label1 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.timerNumeric)).BeginInit();
             this.SuspendLayout();
             // 
             // backButton
@@ -85,7 +88,7 @@
             // 
             this.timerLabel.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
             this.timerLabel.AutoSize = true;
-            this.timerLabel.Location = new System.Drawing.Point(31, 821);
+            this.timerLabel.Location = new System.Drawing.Point(875, 826);
             this.timerLabel.Name = "timerLabel";
             this.timerLabel.Size = new System.Drawing.Size(0, 13);
             this.timerLabel.TabIndex = 4;
@@ -102,11 +105,35 @@
             this.pictureBox.TabIndex = 5;
             this.pictureBox.TabStop = false;
             // 
+            // timerNumeric
+            // 
+            this.timerNumeric.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
+            this.timerNumeric.Location = new System.Drawing.Point(12, 824);
+            this.timerNumeric.Name = "timerNumeric";
+            this.timerNumeric.Size = new System.Drawing.Size(82, 20);
+            this.timerNumeric.TabIndex = 6;
+            this.timerNumeric.Value = new decimal(new int[] {
+            5,
+            0,
+            0,
+            0});
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Location = new System.Drawing.Point(33, 800);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(33, 13);
+            this.label1.TabIndex = 7;
+            this.label1.Text = "Timer";
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1311, 854);
+            this.Controls.Add(this.label1);
+            this.Controls.Add(this.timerNumeric);
             this.Controls.Add(this.pictureBox);
             this.Controls.Add(this.timerLabel);
             this.Controls.Add(this.selectButton);
@@ -116,6 +143,7 @@
             this.Name = "Form1";
             this.Text = "Form1";
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.timerNumeric)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -128,6 +156,8 @@
         private System.Windows.Forms.Button selectButton;
         private System.Windows.Forms.Label timerLabel;
         private System.Windows.Forms.PictureBox pictureBox;
+        private System.Windows.Forms.NumericUpDown timerNumeric;
+        private System.Windows.Forms.Label label1;
     }
 }
 
