@@ -1,4 +1,4 @@
-namespace Image_Display
+﻿namespace Image_Display
 {
     partial class Form1
     {
